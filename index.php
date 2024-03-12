@@ -3,54 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inventory_Management_System</title>
+    <title>Parents Portal </title>
 
     <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"></script>
   
   <Script src="./assets/js/search.js"></Script>
   <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"> </script>
-
-    <style>
-    body{
-
-      background-color: #dfe6e9;
-    }
-  </style>
-</head>
-
-<?php
-include('./config/database.php');
-?>
+<link rel="stylesheet" href="./assets/css/style.css">
+   
+</head> 
 
 <body>
-<form action="/dashboard.php">
-  <div class="mb-3 mt-3">
-    <label for="email" class="form-label">Email:</label>
-    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark "> 
 
-    <div class="input-group">
-    <span class="input-group-text">@</span>
-    <input type="text" class="form-control" placeholder="Username">
+<div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#"> <image src="./assets/img/sitc.png" height="60" style="color": red; font-size: 30px;>  St. Ignatius Technical College, Inc. </a>
+    </ul>
+</nav>
+<div class="card"><div class="card-header" style="text-align: Center;"><p class="h2">Welcome to Parents Portal</p></div>
+  
+  <div class="card-body ">
+    
+  <div class="wrapper">
+<form action="">
+<h1>login</h1>
+  <div class="input-box">
+  <input type="text" placeholder="Username" required>
+  <i><image src="./assets/img/user.png" height="15"> </i>
+</div>
+  <div class="input-box">
+  <input type="password" placeholder="Password" required>
+  <i><image src="./assets/img/lock.png" height="15"> </i> 
+</div>
+  <div class="remember-forgot">
+    <label> <input type="checkbox"> Remember me </label>
+<a href="#">Forgot password?</a>
   </div>
+  <button type="submit" class="btn">Login</button>
 
-  </div>
-  <div class="mb-3">
-    <label for="pwd" class="form-label">Password:</label>
-    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
-
-    <div class="input-group">
-    <input type="text" class="form-control" placeholder="Your Email">
-    <span class="input-group-text">@example.com</span>
-  </div>
-
-  </div>
-  <div class="form-check mb-3">
-    <label class="form-check-label">
-      <input class="form-check-input" type="checkbox" name="remember"> Remember me
-    </label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <div class="register-link"><p>Don't have an account? <a href="/ASLMS/registration.php">Register</a></p></div>
 </form>
+</div>
+
+
 </body>
 
 
